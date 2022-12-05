@@ -35,6 +35,10 @@ color: rgb(19, 147, 185);
     background-color: yellow;
 }
 
+li{
+    margin-left: -20px;
+}
+
 th{
     background-color: rgb(47, 205, 226);
     color: white;
