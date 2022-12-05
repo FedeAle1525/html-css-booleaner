@@ -30,3 +30,8 @@ color: rgb(19, 147, 185);
 .testo-evidenziato{
     background-color: yellow;
 }
+
+th{
+    background-color: rgb(47, 205, 226);
+    color: white;
+}
