@@ -39,9 +39,17 @@ li{
     margin-left: -20px;
 }
 
+td{
+    width: 30%;
+}
+
 th{
     background-color: rgb(47, 205, 226);
     color: white;
+}
+
+.riga-azzurra{
+    background-color: aquamarine;
 }
 
 #testo-footer{
