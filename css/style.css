@@ -26,3 +26,7 @@ color: rgb(19, 147, 185);
 .didascalia{
     font-size: 12px;
 }
+
+.testo-evidenziato{
+    background-color: yellow;
+}
