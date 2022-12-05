@@ -3,3 +3,22 @@ header{
     background-color: rgb(69, 133, 206);
     height: 150px;
 }
+
+#titolo{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#autore{
+color: gray;
+font-size: 18px;
+}
+
+#data{
+color: gray;
+font-size: 12px;
+}
+
+#nome-autore{
+color: rgb(19, 147, 185);
+}
