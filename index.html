@@ -11,93 +11,130 @@
 
     <header>
         <!-- Immagine + logo -->
-        <img src="img/logo.svg" alt="Logo">
+        <img class="logo" src="img/logo.svg" alt="Logo">
     </header>
 
     <main>
-        <!-- Sezione Titolo -->
-        <section>
-            <div id="titolo">Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</div>
-            <div id="autore">Scritto da <span id="nome-autore">The Booleaner</span></div>
-            <div id="data">il 10/10/2020</div>
-        </section>
+        <!-- Tag semantico per il titolo -->
+        <article>
+            <!-- Sezione Titolo -->
+            <!-- Al posto della section si può considerare titolo e autore, l'header dell'articolo -->
+            <section>
+                <!-- Meglio utilizzare il tag h1 per il titolo che è più significati a livello semantico -->
+                <div id="titolo">Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</div>
+                <!-- Aggiunti tag semantici per articolo -->
+                <address class="info-autore">
+                    <!-- Al posto dello "span", meglio usare "strong" che è più siginificativo a livello semantico -->
+                    <!-- Poteva essere considerato pure un link -->
+                    <div id="autore">Scritto da <span id="nome-autore">The Booleaner</span></div>
+                    <div id="data">il <time datetime="2020-10-10">10/10/2020</time></div>
+                </address>
+            </section>
 
-        <!-- Sezione Immagini -->
-        <section>
-            <img src="img/tim-1.jpg" alt="Prima Foto">
-            <img src="img/tim-2.jpg" alt="Seconda Foto">
-            <div class="didascalia">1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen</div>
-            <div class="didascalia">2nd Photo: Wikimedia, by Paul Clarke</div>
-        </section>
+            <!-- Sezione Immagini -->
+            <section>
+                <!-- Tag semantico "figure" raggruppa le immagini e aggiunge una sola didascalia -->
+                <figure>
+                    <img src="img/tim-1.jpg" alt="Prima Foto">
+                    <img src="img/tim-2.jpg" alt="Seconda Foto">
+                    <!-- Serve per mettere la didascalia -->
+                    <figcaption>
+                    1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen <br>
+                    2nd Photo: Wikimedia, by Paul Clarke
+                    </figcaption>
+                </figure>
+            </section>
 
-        <!-- Sezione Testo -->
-        <section>
+            <!-- Sezione Testo -->
+            <section>
 
-            <!-- Testo articolo -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iusto accusamus ut? Debitis unde voluptate dolorum eaque deserunt officia dicta laboriosam eveniet quisquam, sed deleniti tenetur. Impedit nulla culpa perferendis!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, unde. <span class="testo-evidenziato">Veritatis molestiae perferendis nesciunt pariatur voluptas ipsam </span> amet magni quaerat consectetur corrupti, vel, consequatur adipisci debitis? Molestias corporis maxime architecto!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic natus sint dolorum autem quaerat deleniti modi odit! Asperiores aut laboriosam voluptatem mollitia quis atque officia dignissimos in, earum est dolor?
-            </p>
+                <!-- Testo articolo -->
+                <!-- Al posto di "span" meglio usare "strong" a livello semantico -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iusto accusamus ut? Debitis unde voluptate dolorum eaque deserunt officia dicta laboriosam eveniet quisquam, sed deleniti tenetur. Impedit nulla culpa perferendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, unde. <span class="testo-evidenziato">Veritatis molestiae perferendis nesciunt pariatur voluptas ipsam </span> amet magni quaerat consectetur corrupti, vel, consequatur adipisci debitis? Molestias corporis maxime architecto!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic natus sint dolorum autem quaerat deleniti modi odit! Asperiores aut laboriosam voluptatem mollitia quis atque officia dignissimos in, earum est dolor?
+                </p>
 
-            <!-- Lista Non Numerata -->
-            <p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat recusandae dicta autem qui commodi voluptas fugit itaque mollitia incidunt, officiis deserunt nemo doloribus?</li>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequatur quas ratione fuga mollitia harum at nihil est voluptatum iusto quam totam. </li>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur perferendis sequi expedita nulla, quas vero repellat voluptas dicta a exercitationem recusandae adipisci id.</li>
-                </ul>
-            </p>
+                <!-- Lista Non Numerata -->
+                <p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat recusandae dicta autem qui commodi voluptas fugit itaque mollitia incidunt, officiis deserunt nemo doloribus?</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequatur quas ratione fuga mollitia harum at nihil est voluptatum iusto quam totam. </li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur perferendis sequi expedita nulla, quas vero repellat voluptas dicta a exercitationem recusandae adipisci id.</li>
+                    </ul>
+                </p>
 
-            <!-- Tabella -->
-            <p>
-                <table>
-                    <!-- Intestazione Tabella -->
-                    <thead>
-                        <th>Lorem ipsum dolor</th>
-                        <th>Lorem ipsum dolor</th>
-                        <th>Lorem ipsum dolor</th>
-                    </thead>
-                    <!-- Prima Riga -->
-                    <tr>
-                        <td class="riga-azzurra">Lorem ipsum dolor</td>
-                        <td class="riga-azzurra">Lorem ipsum dolor</td>
-                        <td class="riga-azzurra">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis optio laboriosam ut cum. Temporibus voluptatum dolore dicta velit deleniti nisi expedita provident perferendis, saepe doloribus mollitia repellendus non vitae cupiditate.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi quaerat ratione laudantium reprehenderit repellat est qui voluptas earum maxime quisquam ad fugit sunt minima, vel, architecto omnis ipsum deleniti!
-                        </td>
-                    </tr>
-                    <!-- Seconda Riga -->
-                    <tr>
-                        <td>Lorem ipsum dolor</td>
-                        <td>Lorem ipsum dolor</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis optio laboriosam ut cum. Temporibus voluptatum dolore dicta velit deleniti nisi expedita provident perferendis, saepe doloribus mollitia repellendus non vitae cupiditate.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi quaerat ratione laudantium reprehenderit repellat est qui voluptas earum maxime quisquam ad fugit sunt minima, vel, architecto omnis ipsum deleniti!
-                        </td>
-                    </tr>
-                    <!-- Terza Riga -->
-                    <tr>
-                        <td class="riga-azzurra">Lorem ipsum dolor</td>
-                        <td class="riga-azzurra">Lorem ipsum dolor</td>
-                        <td class="riga-azzurra">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis optio laboriosam ut cum. Temporibus voluptatum dolore dicta velit deleniti nisi expedita provident perferendis, saepe doloribus mollitia repellendus non vitae cupiditate.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi quaerat ratione laudantium reprehenderit repellat est qui voluptas earum maxime quisquam ad fugit sunt minima, vel, architecto omnis ipsum deleniti!
-                        </td>
-                    </tr>
-                </table>
-            </p>
+                <!-- Tabella -->
+                <p>
+                    <table class="table">
+                        <!-- Intestazione Tabella -->
+                        <thead class="intest-tabella">
+                            <tr>
+                                <th class="spazio-25">Lorem ipsum dolor</th>
+                                <th class="spazio-25">Lorem ipsum dolor</th>
+                                <th class="spazio-50">Lorem ipsum dolor</th>
+                            </tr>
+                        </thead>
 
-            <!-- Continuazione Testo -->
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, repellat consectetur qui quia exercitationem aut nihil, nisi voluptatem et, facilis obcaecati debitis ad sunt fugiat est culpa earum eligendi corporis!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae error explicabo reprehenderit nam officia. <span class="testo-evidenziato"> veniam alias expedita autem corrupti temporibus laborum, </span> labore laboriosam ratione, fugit sint quia dignissimos ut!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit numquam nisi iure? Natus a amet est vitae consequatur fuga vel facilis voluptates quisquam laudantium expedita, enim aut, sed id suscipit?
-            </p>
-        </section>
+                        <tbody>
+                        <!-- Prima Riga -->
+                            <tr>
+                                <td class="riga-azzurra">Lorem ipsum dolor</td>
+                                <td class="riga-azzurra">Lorem ipsum dolor</td>
+                                <td class="riga-azzurra">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis optio laboriosam ut cum. Temporibus voluptatum dolore dicta velit deleniti nisi expedita provident perferendis, saepe doloribus mollitia repellendus non vitae cupiditate.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi quaerat ratione laudantium reprehenderit repellat est qui voluptas earum maxime quisquam ad fugit sunt minima, vel, architecto omnis ipsum deleniti!
+                                </td>
+                            </tr>
+                            <!-- Seconda Riga -->
+                            <tr>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis optio laboriosam ut cum. Temporibus voluptatum dolore dicta velit deleniti nisi expedita provident perferendis, saepe doloribus mollitia repellendus non vitae cupiditate.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi quaerat ratione laudantium reprehenderit repellat est qui voluptas earum maxime quisquam ad fugit sunt minima, vel, architecto omnis ipsum deleniti!
+                                </td>
+                            </tr>
+                            <!-- Terza Riga -->
+                            <tr>
+                                <td class="riga-azzurra">Lorem ipsum dolor</td>
+                                <td class="riga-azzurra">Lorem ipsum dolor</td>
+                                <td class="riga-azzurra">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis optio laboriosam ut cum. Temporibus voluptatum dolore dicta velit deleniti nisi expedita provident perferendis, saepe doloribus mollitia repellendus non vitae cupiditate.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi quaerat ratione laudantium reprehenderit repellat est qui voluptas earum maxime quisquam ad fugit sunt minima, vel, architecto omnis ipsum deleniti!
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+
+                <!-- Continuazione Testo -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, repellat consectetur qui quia exercitationem aut nihil, nisi voluptatem et, facilis obcaecati debitis ad sunt fugiat est culpa earum eligendi corporis!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae error explicabo reprehenderit nam officia. <span class="testo-evidenziato"> veniam alias expedita autem corrupti temporibus laborum, </span> labore laboriosam ratione, fugit sint quia dignissimos ut!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit numquam nisi iure? Natus a amet est vitae consequatur fuga vel facilis voluptates quisquam laudantium expedita, enim aut, sed id suscipit?
+                </p>
+            </section>
+
+            <footer>
+                <h3>Potrebbero interessarti</h3>
+
+                <article id="foto1" class="square">
+                    <h3 class="titolo-last-article">Lorem ipsum dolor</h3>
+                </article>
+
+                <article id="foto2" class="square">
+                    <h3 class="titolo-last-article">Lorem ipsum dolor</h3>
+                </article>
+            </footer>
+        </article>
     </main>
 
-    <footer>
+    <!-- Gli articoli di fondo sono considerati "footer" dell'articolo e non della pagina -->
+    <!-- E' più corretto metterli in fondo al main -->
+    <!-- <footer>
         <p id="testo-footer">Potrebbero Interessarti</p>
         <div><img src="img/monitor.jpg" alt="Monitor"></div>
         <div><img src="img/graph.jpg" alt="Grafici"></div>
-    </footer>
+    </footer> -->
+    <!-- Soluzione per allineare testo sopra immagine senza position: usare immagine come background di div -->
     
 </body>
 </html>

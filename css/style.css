@@ -1,11 +1,17 @@
+/* Meglio assegnare una classe a "header" perchè ne potrei avere più in una pagina */
 header{
     background-image: url(../img/pattern.png);
     background-color: rgb(69, 133, 206);
-    height: 150px;
+    background-size: 250px;
+    /* Non serve dare dimensione a header perchè si adatta al contenuto (logo) */
+    /* height: 150px; */
 }
 
-img{
-    height: 40%;
+.logo{
+    /* Non va messo in % perchè ridimensionando lo schermo si adatta */
+    /* Deve essere dimensione fissa */
+    /* Per convenzione si indica sempre larghezza e l'altezza si adatta */
+    width: 180px;
 }
 
 #titolo{
@@ -13,21 +19,54 @@ img{
     font-weight: bold;
 }
 
-#autore{
-color: gray;
-font-size: 18px;
+/*
+Da usare al posto del titolo
+ h1{
+    font-size: 35px;
+    font-weight: bold;
+} */
+
+
+address{
+    /* Serve per resettare lo stile corsivo impostato di deafault */
+    font-style: normal;
 }
 
-#data{
-color: gray;
-font-size: 12px;
+.info-autore{
+    font-size: 20px;
+    color: gray;
 }
+
+/* link{
+    Con "CurrentColor" si eredita il colore del padre
+    color: currentColor;
+    text-decoration: none;
+} */
+
+/* #autore{
+color: gray;
+font-size: 18px;
+} */
+
+#data{
+/* color: gray; */
+font-size: 14px;
+} 
+
+/* Altro modo di modificare la data utilizzando i selettori multipli
+.info-autore time{
+    font-size: 14px;
+} */
 
 #nome-autore{
 color: rgb(19, 147, 185);
 }
 
-.didascalia{
+/* .didascalia{
+    font-size: 12px;
+} */
+
+figcaption{
     font-size: 12px;
 }
 
@@ -35,24 +74,70 @@ color: rgb(19, 147, 185);
     background-color: yellow;
 }
 
-li{
-    margin-left: -20px;
+/* strong{
+    Serve per resettera il grassetto impostato di default
+    font-weight: 400;
+    background-color: yellow;
+} */
+
+ul{
+    padding: 20px;
 }
 
-td{
+.table{
+    /* La grandezza della tabella occupa tutta la pagina web */
+    width: 100%;
+    /* Serve per togliere i bordi tra le celle */
+    border-collapse: collapse;
+}
+
+.intest-tabella{
+    background-color: dodgerblue;
+    color: white;
+    text-align: left;
+}
+
+.spazio-25{
+    width: 25%;
+}
+
+.spazio-50{
+    width: 50%;
+}
+
+/* td{
     width: 30%;
 }
 
 th{
     background-color: rgb(47, 205, 226);
     color: white;
-}
+} */
 
 .riga-azzurra{
     background-color: aquamarine;
 }
 
-#testo-footer{
+.titolo-last-article{
+    color: white;
+}
+
+#foto1{
+    background-image: url(../img/monitor.jpg);
+}
+
+#foto2{
+    background-image: url(../img/graph.jpg);
+}
+
+.square{
+    height: 200px;
+    width: 250px;
+}
+
+/* #testo-footer{
     font-weight: bold;
     color: gray;
-}
+} */
+
+
